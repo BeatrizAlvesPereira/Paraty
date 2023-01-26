@@ -1,0 +1,155 @@
+/* Estilização da página inteira */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFFFFF;
+}
+/* Estilizaçaõ de limitação de área */
+.limita-area{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+/* Estilização do cabeçalho e rodape */
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    box-sizing: border-box;
+}
+.logo img{
+    width: 150px;
+}
+.secao-opcao a{
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+    color: #000000;
+}
+/* Estilização das serções - section */
+section{
+    padding: 60px 20px;
+}
+/* Estilização da 1° serção */
+.capa{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    background-image: url("img CSS/bg-estacao.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+
+}
+.capa::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.capa div{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-transform: uppercase;
+    padding: 75px 20px;
+    z-index: 1;
+    box-sizing: border-box;
+}
+.capa h1{
+    font-size: 80px;
+}
+.capal h2{
+    font-size: 35px;
+}
+.capa h1, .capa h2{
+    margin: 0;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 5px #000;
+}
+/* Estilização dos títulos da página */
+h3{
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+/* Estilização das imagens usando o pseudo-classe */
+.limita-img img:first-of-type{
+    width: 100%;
+}
+/* Estilização dos parágrafo e utilizando o pseudo-elemento */
+p{
+    font-size: 16px;
+    line-height: 32px;
+    margin: 15px 0;
+}
+p::first-letter{
+    font-size: 18px;
+    font-weight: bold;
+}
+/* Estilização da 3° serção - usando o pseudo-elemento */
+#pontos-turisticos{
+    background-color: #E9E9E9;
+    box-sizing: border-box;
+}
+ul{
+    margin: 10px 0 0 0;
+    list-style: none;
+    line-height: 32px;
+    padding: 0;
+}
+li{
+    display: flex;
+    align-items: center;
+    margin: 12px 0 0 0;
+}
+li::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    background-image: url("img CSS/seta.png");
+    background-repeat: no-repeat;
+    padding: 0 6px 0 0;
+    
+}
+/* Estilização da 4° serção - galeria */
+.galeria{
+    width: 100%;
+}
+.galeria{
+    width: 100%;
+}
+.galeria img{
+    width: calc((100% / 3) - 3px);
+    opacity: 0.6;
+}
+.galeria img:hover{
+    background-color: #FFFFFF;
+    opacity: 1;
+}
+/* Estilização do rodapé */
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: #f5c002;
+    box-sizing: border-box;
+}
